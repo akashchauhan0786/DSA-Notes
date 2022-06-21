@@ -2,25 +2,25 @@ public static ArrayList < Integer > bfsOfGraph(int V, ArrayList < ArrayList < In
 
         ArrayList < Integer > bfs = new ArrayList < > ();
         boolean vis[] = new boolean[V];
-        Queue < Integer > q = new LinkedList < > ();
+        for(int i = 0; i<V; i++) {
+                Queue < Integer > q = new LinkedList < > ();
+                q.add(0);
+                vis[0] = true;
 
-        q.add(0);
-        vis[0] = true;
+                while (!q.isEmpty()) {
+                    Integer node = q.poll();
+                    bfs.add(node);
 
-        while (!q.isEmpty()) {
-            Integer node = q.poll();
-            bfs.add(node);
-
-            // Get all adjacent vertices of the dequeued vertex s
-            // If a adjacent has not been visited, then mark it
-            // visited and enqueue it
-            for (Integer it: adj.get(node)) {
-                if (vis[it] == false) {
-                    vis[it] = true;
-                    q.add(it);
+                    // Get all adjacent vertices of the dequeued vertex s
+                    // If a adjacent has not been visited, then mark it
+                    // visited and enqueue it
+                    for (Integer it: adj.get(node)) {
+                        if (vis[it] == false) {
+                            vis[it] = true;
+                            q.add(it);
+                        }
+                    }
                 }
-            }
         }
-
         return bfs;
     }
