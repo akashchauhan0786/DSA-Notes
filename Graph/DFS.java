@@ -15,10 +15,10 @@
         ArrayList<Integer> storeDfs = new ArrayList<>();
 
         //boolean array to keep track of visited vertices
-        boolean vis[] = new boolean[V+1];
+        boolean vis[] = new boolean[V];
 
         //If you are starting from node 2, then i should start from 2.
-        for(int i = 1;i<=V;i++) {
+        for(int i = 0;i<V;i++) {
             if(!vis[i]) 
               dfs(i, vis, adj, storeDfs);
         }
