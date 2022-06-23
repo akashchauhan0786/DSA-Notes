@@ -31,8 +31,15 @@
     - Space Complexity : O(N) + O(N) Space for Visited array, Auxiliary space(stack call)
 
 # Cycle Detection
-  * BFS
-    - [Code](bfs.java)
+  * Using BFS
+    - Logic 
+      - Same as BFS just modify BFS call
+      - First Create Node class that will contains two fields(node and parent)
+      - then while traversing the adjacent node 
+       - check if adjacent node not visited
+       -  then add into queue (q.add(new Node(adjacentNode, node))) mark as visited
+       -  else if(parent != adjacentNode) return true
+    - [Code](CycleDetectionUsingBFS.java)
     - Time Complexity : O(N+E)
       N = Nodes , E = travelling through adjacent nodes
     - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
