@@ -33,13 +33,40 @@
 # Cycle Detection
   * Using BFS
     - Logic 
-      - Same as BFS just modify BFS call
       - First Create Node class that will contains two fields(node and parent)
-      - then while traversing the adjacent node 
-       - check if adjacent node not visited
-       -  then add into queue (q.add(new Node(adjacentNode, node))) mark as visited
-       -  else if(parent != adjacentNode) return true
+      - Modify the BFS call a bit
+      - Means while iterating its adjacent nodes
+      ```
+      for (Integer it : adj[node]){
+             if (!visited[it])
+             {
+                 visited[it] = true;
+                 q.push({it, node});
+             }
+             else if (par != it)
+                 return true;
+      } 
+      ```
     - [Code](CycleDetectionUsingBFS.java)
     - Time Complexity : O(N+E)
       N = Nodes , E = travelling through adjacent nodes
     - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
+  
+  * Using DFS
+    - Logic 
+      - Modify the DFS call a bit
+      - Means while iterating its adjacent nodes
+      ```
+      for (Integer it: adj.get(node)) {
+           if (vis[it] == false) {
+               if (dfs(it, node, vis, adj))
+                   return true;
+           } else if (it != parent)
+               return true;
+       }
+      ```
+    - [Code](CycleDetectionUsingDFS.java)
+    - Time Complexity : O(N+E)
+      N = Nodes , E = travelling through adjacent nodes
+    - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
+
