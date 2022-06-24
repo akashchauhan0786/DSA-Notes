@@ -47,7 +47,7 @@
                  return true;
       } 
       ```
-    - [Code](CycleDetectionUsingBFS.java)
+    - [Code](CycleDetectionInUnDirectedGraphUsingBFS.java)
     - Time Complexity : O(N+E)
       N = Nodes , E = travelling through adjacent nodes
     - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
@@ -65,7 +65,7 @@
                return true;
        }
       ```
-    - [Code](CycleDetectionUsingDFS.java)
+    - [Code](CycleDetectionInUnDirectedGraphUsingDFS.java)
     - Time Complexity : O(N+E)
       N = Nodes , E = travelling through adjacent nodes
     - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
