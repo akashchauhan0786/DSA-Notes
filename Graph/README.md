@@ -70,3 +70,34 @@
       N = Nodes , E = travelling through adjacent nodes
     - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
 
+# Bipartite Graph
+  * Using BFS
+    - Logic
+      - Instead of visited array create color array and fill with -1
+      - Run loop for 1->N for all nodes(Graph can have multiple components)
+        - if color of current node == -1
+          - Call BFS 
+          - In BFS 
+          ```
+          private boolean bfs(int v, int color[], ArrayList<ArrayList<Integer>>adj) {
+             Queue<Integer> queue = new LinkedList<>();
+             queue.add(v);
+             color[v] = 1;
+             while(!queue.isEmpty()) {
+                 Integer node = queue.poll();
+                 for(Integer it : adj.get(node)) {
+                     if(color[it] == -1) {
+                         color[it] = 1 - color[node];
+                         queue.add(it);
+                     } else if(color[it] == color[node]) {
+                         return false;
+                     }
+                 }
+             }
+             return true;
+          }
+          ```
+    - [Code](BipartiteGraphUsingBFS.java)
+    - Time Complexity : O(N+E)
+      N = Nodes , E = travelling through adjacent nodes
+    - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
