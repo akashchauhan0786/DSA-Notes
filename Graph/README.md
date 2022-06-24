@@ -101,3 +101,29 @@
     - Time Complexity : O(N+E)
       N = Nodes , E = travelling through adjacent nodes
     - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
+ 
+ * Using DFS
+    - Logic 
+      - Modify the DFS call a bit
+      - In DFS call
+      ```
+      private boolean dfs(int v, int color[], ArrayList<ArrayList<Integer>>adj) {
+         if(color[v] == -1) 
+             color[v] = 1;
+         for(Integer it : adj.get(v)) {
+             if(color[it] == -1) {
+                 color[it] = 1 - color[v];
+                 if(!dfs(it, color, adj)) {
+                     return false;
+                 }
+             } else if(color[it] == color[v]) {
+                 return false;
+             }
+         }
+         return true;
+      }
+      ```
+    - [Code](BipartiteGraphUsingDFS.java)
+    - Time Complexity : O(N+E)
+      N = Nodes , E = travelling through adjacent nodes
+    - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
