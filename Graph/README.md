@@ -30,7 +30,7 @@
       N = Nodes , E = travelling through adjacent nodes
     - Space Complexity : O(N) + O(N) Space for Visited array, Auxiliary space(stack call)
 
-# Cycle Detection
+# Cycle Detection In Undirected Graph
   * Using BFS
     - Logic 
       - First Create Node class that will contains two fields(node and parent)
