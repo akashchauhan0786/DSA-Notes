@@ -156,4 +156,29 @@
     - [Code](CycleDetectionInDirectedGraphUsingDFS.java)
     - Time Complexity : O(N+E)
       N = Nodes , E = travelling through adjacent nodes
-    - Space Complexity : O(N) + O(N) Space for Visited array, Auxiliary space(stack call)
+    - Space Complexity : O(N) + O(N) Space for Visited array and stack
+    - Auxiliary Space Complexity:  O(N) Recursion call of DFS
+
+
+# Topological Sort Using DFS
+## It is linear ordering of vertices in DAG(Direct Acyclic Graph)such that there is an edge u—-> v, u appears before v in the ordering. 
+  * Logic 
+    - Modify the DFS call a bit
+    - Means we need stack once travesal completed push into stack
+      ```
+      private static void dfs(int v, Stack<Integer> stack, boolean visited[],
+      ArrayList<ArrayList<Integer>> adj) {
+          visited[v] = true;
+          for(Integer it : adj.get(v)) {
+              if(visited[it] == false) {
+                   dfs(it, stack, visited, adj);
+              }
+          }
+          stack.push(v);
+      }
+      ```
+    - [Code](TopologicalSortUsingDFS.java)
+    - Time Complexity : O(N+E)
+      N = Nodes , E = travelling through adjacent nodes
+    - Space Complexity : O(N) + O(N) Space for Visited array and stack
+    - Auxiliary Space Complexity:  O(N) Recursion call of DFS
