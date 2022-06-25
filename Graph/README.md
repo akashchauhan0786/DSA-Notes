@@ -68,7 +68,7 @@
     - [Code](CycleDetectionInUnDirectedGraphUsingDFS.java)
     - Time Complexity : O(N+E)
       N = Nodes , E = travelling through adjacent nodes
-    - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
+    - Space Complexity : O(N) + O(N) Space for Visited array, Auxiliary space(stack call)
 
 # Bipartite Graph
 ## Bipartite of graph possible if we can color the graph using two color
@@ -127,4 +127,4 @@
     - [Code](BipartiteGraphUsingDFS.java)
     - Time Complexity : O(N+E)
       N = Nodes , E = travelling through adjacent nodes
-    - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
+    - Space Complexity : O(N) + O(N) Space for Visited array, Auxiliary space(stack call)
