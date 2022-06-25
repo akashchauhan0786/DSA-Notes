@@ -132,7 +132,7 @@
 # Cycle Detection In Directed Graph
   * Using DFS
     - Logic 
-    - Instead of parent node we need to keep track of node travasel if its visted alredy by a other node travesal then we can say it cycle present
+    - Instead of parent node we need to keep track of node travasel if its visted already by a other node travesal then we can say it cycle present
       - Modify the DFS call a bit
       - Means we need stackcall array of node once travesal completed marked as 0 
       ```
@@ -151,7 +151,7 @@
            }
            stack[v] = false;
            return false;
-     }
+       }
       ```
     - [Code](CycleDetectionInDirectedGraphUsingDFS.java)
     - Time Complexity : O(N+E)
