@@ -71,6 +71,7 @@
     - Space Complexity : O(N) + O(N) Space for Visited array, queue data structure
 
 # Bipartite Graph
+## Bipartite of graph possible if we can color the graph using two color
   * Using BFS
     - Logic
       - Instead of visited array create color array and fill with -1
