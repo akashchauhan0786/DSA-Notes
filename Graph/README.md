@@ -182,3 +182,39 @@
       N = Nodes , E = travelling through adjacent nodes
     - Space Complexity : O(N) + O(N) Space for Visited array and stack
     - Auxiliary Space Complexity:  O(N) Recursion call of DFS
+
+# Topological Sort Using BFS(Kahn's Algorithm)
+## It is linear ordering of vertices in DAG(Direct Acyclic Graph)such that there is an edge u—-> v, u appears before v in the ordering. 
+  * Logic 
+    - Create a indegree array
+    - Fill indegree array
+      ```
+      for(int i = 0; i < V; i++) {
+            for(Integer it : adj.get(i)) {
+                indegree[it]++;
+            }
+      }
+      ```
+    - Create a queue and add node with indegree = 0
+    - Do bfs call
+    ```
+    while(!queue.isEmpty()) {
+            Integer node = queue.poll();
+            topo[ind++] = node;
+            for(Integer it : adj.get(node)) {
+                indegree[it]--;
+                if(indegree[it] == 0) {
+                    queue.add(it);
+                }
+            }
+        }
+       return topo;
+    // to detect cycle    
+       // if(cnt == N) return false;
+       // return true;
+    }
+    ```
+    - [Code](TopologicalSortUsingBFS.java)
+    - Time Complexity : O(N+E)
+      N = Nodes , E = travelling through adjacent nodes
+    - Space Complexity : O(N) + O(N) Space for Indegree array, queue data structure
