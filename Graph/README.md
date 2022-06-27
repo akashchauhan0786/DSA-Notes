@@ -239,6 +239,5 @@
      }
     ```
     - [Code](DijkstraAlgorithm.java)
-    - Time Complexity : O(N+E)
-      N = Nodes , E = travelling through adjacent nodes
+    - Time Complexity :  O((N+E)*logN). Going through N nodes and E edges and log N for priority queue
     - Space Complexity : O(N) + O(N) Space for Indegree array, queue data structure
