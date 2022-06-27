@@ -241,3 +241,33 @@
     - [Code](DijkstraAlgorithm.java)
     - Time Complexity :  O((N+E)*logN). Going through N nodes and E edges and log N for priority queue
     - Space Complexity : O(N) + O(N) Space for Indegree array, queue data structure
+
+# Kosaraju’s Algorithm for Strongly Connected Components(SCC)
+  * Logic 
+    - Create a stack fill by topo sort
+    - Transpose a graph
+    ```
+    for (int i = 0; i < n; i++) 
+			 transpose.add(new ArrayList<Integer>());
+    for(int i = 0;i<n;i++) {
+      vis[i] = 0; 
+      for(Integer it: adj.get(i)) {
+       transpose.get(it).add(i); 
+      }
+    }
+    ```
+    - do a dfs on stack filled by topo sort
+    ```
+    while(st.size() > 0) {
+      int node = st.peek(); 
+      st.pop(); 
+      if(vis[node] == 0) {
+       System.out.print("SCC: "); 
+       revDfs(node, transpose, vis);
+       System.out.println(); 
+      }
+		  }
+    ```
+    - [Code](Kosaraju’sAlgorithm.java)
+    - Time Complexity :  O(N+E), DFS+TopoSort
+    - Space Complexity : O(N+E), Transposing the graph
