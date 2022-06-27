@@ -218,3 +218,27 @@
     - Time Complexity : O(N+E)
       N = Nodes , E = travelling through adjacent nodes
     - Space Complexity : O(N) + O(N) Space for Indegree array, queue data structure
+    
+ # Dijkstra's Algorithm | Shortest Path in Undirected Graphs
+  * Logic 
+    - Create a distance array
+    - Fill distance array with Integer.MAX_VALUE
+    - Create a PriorityQueue and add node with dist = 0
+    ```
+    PriorityQueue<Node> pq = new PriorityQueue<Node>(N, new Node());
+     pq.add(new Node(s, 0));   
+     while(pq.size() > 0) {
+         Node node = pq.poll();
+
+         for(Node it: adj.get(node.getV())) {
+             if(dist[node.getV()] + it.getWeight() < dist[it.getV()]) {
+                 dist[it.getV()] = dist[node.getV()] + it.getWeight(); 
+                 pq.add(new Node(it.getV(), dist[it.getV()]));
+             }
+         }
+     }
+    ```
+    - [Code](DijkstraAlgorithm.java)
+    - Time Complexity : O(N+E)
+      N = Nodes , E = travelling through adjacent nodes
+    - Space Complexity : O(N) + O(N) Space for Indegree array, queue data structure
