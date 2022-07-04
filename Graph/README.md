@@ -194,12 +194,14 @@
                 indegree[it]++;
             }
       }
+      int cnt = 0;
       ```
     - Create a queue and add node with indegree = 0
     - Do bfs call
     ```
     while(!queue.isEmpty()) {
             Integer node = queue.poll();
+	    cnt++; 
             topo[ind++] = node;
             for(Integer it : adj.get(node)) {
                 indegree[it]--;
@@ -210,7 +212,7 @@
         }
        return topo;
     // to detect cycle    
-       // if(cnt == N) return false;
+       // if(cnt == V) return false;
        // return true;
     }
     ```
