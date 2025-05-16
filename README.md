@@ -1,95 +1,119 @@
-# 📘 Step-by-Step DSA Prep Plan for MANG (Meta, Apple, Netflix, Google)
+# 🚀 Ultimate DSA Prep Plan for MANG (Meta, Apple, Netflix, Google)
 
-## ✅ Step 1: Master the Basics
-- Time & Space Complexity
-- Recursion & Iteration
-- Java fundamentals (or your preferred language)
+> 📚 A 12-week structured roadmap combining [Striver’s A2Z DSA Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2) and targeted MANG interview prep strategies.  
+> 🧠 Language: Java (or your primary interview language)
 
 ---
 
-## ✅ Step 2: Core Topics to Cover
+## 🧭 Roadmap Overview
 
-### 🔹 Arrays & Strings
-- Sliding Window, Two Pointers, Prefix Sum  
-- **LeetCode Tags**: `array`, `string`, `sliding-window`, `two-pointers`
-
-### 🔹 Hashing
-- HashMap, HashSet, Frequency Maps  
-- **Tags**: `hash-table`
-
-### 🔹 Stack & Queue
-- Monotonic Stack, Deques  
-- **Tags**: `stack`, `queue`, `monotonic-stack`
-
-### 🔹 Linked Lists
-- Reversals, Merging, Fast & Slow Pointers  
-- **Tags**: `linked-list`
-
-### 🔹 Trees & Graphs
-- DFS, BFS, BST, Trie, Union Find  
-- **Tags**: `tree`, `graph`, `bfs`, `dfs`, `trie`
-
-### 🔹 Recursion & Backtracking
-- Subsets, Permutations, N-Queens  
-- **Tags**: `recursion`, `backtracking`
-
-### 🔹 Dynamic Programming (DP)
-- 0/1 Knapsack, Subsequence Problems, Partitions  
-- **Tags**: `dynamic-programming`
-
-### 🔹 Greedy
-- Interval Problems, Activity Selection  
-- **Tags**: `greedy`
-
-### 🔹 Heaps & Priority Queues
-- Kth Largest, Median Finder  
-- **Tags**: `heap`, `priority-queue`
-
-### 🔹 Bit Manipulation & Math
-- XOR tricks, Set Bits, GCD, Primes  
-- **Tags**: `bit-manipulation`, `math`
+| Week | Topics Covered | Key Patterns |
+|------|----------------|--------------|
+| 1 | Programming Basics, Math, Bitwise | Brute Force, XOR, Math Tricks |
+| 2 | Recursion & Backtracking Intro | Pick/Not Pick, Subsets |
+| 3 | Sorting & Searching | Binary Search, Sorting Comparators |
+| 4 | Arrays, Prefix Sum, Sliding Window | Two Pointers, Kadane’s |
+| 5 | Hashing & Strings | Frequency Map, Palindrome, Anagram |
+| 6 | Linked List | Fast/Slow Pointers, Reversal |
+| 7 | Stack & Queue | Monotonic Stack, Sliding Window Max |
+| 8 | Trees & BST | DFS, BFS, Recursion |
+| 9 | Heap & Greedy | Priority Queue, Sorting Based Greedy |
+|10 | Advanced Backtracking | Sudoku, Word Search |
+|11 | Dynamic Programming | Memoization, Tabulation |
+|12 | Graphs, Tries, DSU | BFS/DFS, MST, Trie, Union-Find |
 
 ---
 
-## ✅ Step 3: Learn DSA Patterns
-- Sliding Window  
-- Two Pointers  
-- Fast & Slow Pointers  
-- Binary Search on Answer  
-- Top K Elements (Heap)  
-- Backtracking  
-- Dynamic Programming  
-- Graph Traversals (DFS, BFS)
+## 📌 Weekly Breakdown
+
+### 📅 Week 1: Programming Foundation + Math + Bitwise
+- Time Complexity, I/O, GCD/LCM, Primes
+- Set Bits, XOR operations
+- 🧪 Practice: 15+ problems
+
+### 📅 Week 2: Recursion + Backtracking Basics
+- Functional vs Parameterized Recursion
+- Subsets, Permutations
+- 🧪 Practice: 10–12 problems
+
+### 📅 Week 3: Sorting & Searching
+- Bubble, Insertion, Merge, Quick
+- Binary Search (Standard + on Answer)
+- 🧪 Practice: 12–15 problems
+
+### 📅 Week 4: Arrays + Prefix/Suffix + Sliding Window
+- 1D/2D Arrays, Prefix Sum, Kadane’s
+- Sliding Window, Two Pointers
+- 🧪 Practice: 15–18 problems
+
+### 📅 Week 5: Hashing + Strings
+- HashMaps, Sets, Anagrams, Palindromes
+- Frequency Count, Window Matching
+- 🧪 Practice: 15–20 problems
+
+### 📅 Week 6: Linked Lists
+- Singly & Doubly, Reversal, Merge
+- Floyd’s Cycle, Middle Node
+- 🧪 Practice: 10–15 problems
+
+### 📅 Week 7: Stack, Queue, Monotonic Stack
+- Infix/Postfix, Next Greater
+- Sliding Window Maximum, Queue Impl
+- 🧪 Practice: 12–15 problems
+
+### 📅 Week 8: Trees & Binary Search Trees
+- Traversals, Height, Diameter
+- Insert/Delete in BST, LCA
+- 🧪 Practice: 15–20 problems
+
+### 📅 Week 9: Heap + Greedy
+- Min/Max Heap, Kth Largest, PQ
+- Activity Selection, Interval Problems
+- 🧪 Practice: 10–12 problems
+
+### 📅 Week 10: Advanced Backtracking
+- Sudoku, Rat in Maze, Word Search
+- N-Queens
+- 🧪 Practice: 10–12 problems
+
+### 📅 Week 11: Dynamic Programming
+- 0/1 Knapsack, LCS, LIS
+- DP on Strings, DP on Grids
+- 🧪 Practice: 15–18 problems
+
+### 📅 Week 12: Graphs + Tries + DSU
+- BFS, DFS, Dijkstra, Topo Sort
+- Union-Find, Kruskal/Prim’s
+- Trie Implementation
+- 🧪 Practice: 20+ problems
 
 ---
 
-## ✅ Step 4: Suggested 4-Month Timeline
+## 🎯 Key DSA Patterns
 
-| Month | Focus Areas |
-|-------|-------------|
-| 1     | Arrays, Strings, Hashing, Stack/Queue |
-| 2     | Linked List, Trees, Recursion, Backtracking |
-| 3     | Graphs, Heaps, Greedy, Math |
-| 4     | Dynamic Programming + Mock Interviews |
-
----
-
-## ✅ Practice Tips
-- Solve **300–400 well-chosen problems**
-- Track progress (Notion / Excel / LeetCode Lists)
-- Practice clean Java code
-- Simulate weekly mock interviews (Pramp, Interviewing.io)
+- 🪟 **Sliding Window**
+- ➗ **Two Pointers**
+- 🌀 **Fast & Slow Pointer**
+- 📊 **Prefix Sum**
+- 🔍 **Binary Search (on answer space too)**
+- 🎲 **Backtracking**
+- 🌳 **DFS/BFS**
+- 🧠 **Memoization & Tabulation**
+- 🔁 **Monotonic Stack**
+- 🧺 **Heap/Priority Queue**
 
 ---
 
-## ✅ Recommended Resources
-- [LeetCode](https://leetcode.com) (Top 300 + company tags)
-- [NeetCode](https://neetcode.io/)
-- [Grokking the Coding Interview](https://www.educative.io/courses/grokking-the-coding-interview)
-- *Cracking the Coding Interview* (Book)
-- YouTube: [Back to Back SWE](https://www.youtube.com/c/BackToBackSWE), [CS Dojo](https://www.youtube.com/c/CSDojo)
+## 🧪 Practice Sources
+
+- [LeetCode](https://leetcode.com)
+- [Striver's A2Z Sheet](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2)
+- [GFG](https://geeksforgeeks.org)
+- [NeetCode 150](https://neetcode.io)
 
 ---
 
-## 📌 Want More?
-📄 Need a Notion planner or Google Sheet tracker for this? Let me know and I’ll generate one for you!
+## 🔧 Setup
+
+You can create folders by week or topic:
+
