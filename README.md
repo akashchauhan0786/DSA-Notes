@@ -19,7 +19,7 @@
 | [Week 8](./Week08_Trees_BST) | Trees & BST | DFS, BFS, Recursion |
 | [Week 9](./Week09_Heap_Greedy) | Heap & Greedy | Priority Queue, Sorting Based Greedy |
 | [Week 10](./Week10_Advanced_Backtracking) | Advanced Backtracking | Sudoku, Word Search |
-| [Week 11](./DSA-Notes/Week11_DP) | Dynamic Programming | Memoization, Tabulation |
+| [Week 11](./Week11_DP) | Dynamic Programming | Memoization, Tabulation |
 | [Week 12](./Week12_Graphs_Tries_DSU) | Graphs, Tries, DSU | BFS/DFS, MST, Trie, Union-Find |
 
 ---
@@ -76,7 +76,7 @@
 - N-Queens
 - 🧪 Practice: 10–12 problems
 
-### [📅 Week 11: Dynamic Programming](./DSA-Notes/Week11_DP)
+### [📅 Week 11: Dynamic Programming](./Week11_DP)
 - 0/1 Knapsack, LCS, LIS
 - DP on Strings, DP on Grids
 - 🧪 Practice: 15–18 problems
